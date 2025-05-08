@@ -22,7 +22,10 @@ ospf_route = "      10.0.24.0/24 [110/41] via 10.0.13.3, 3d18h, FastEthernet0/0"
 output = "\n{:25} {}" * 5
 
 route = ospf_route.replace(",", " ").replace("[", "").replace("]", "")
+print(route)
+
 route = route.split()
+print(route)
 
 print(output.format(
         "Prefix", route[0],

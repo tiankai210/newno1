@@ -17,5 +17,6 @@ this stage it is difficult otherwise test the result.
 
 mac = "AAAA:BBBB:CCCC"
 
+#转化为二进制
 bin_mac = "{:b}".format(int(mac.replace(":", ""), 16))
 print(bin_mac)
