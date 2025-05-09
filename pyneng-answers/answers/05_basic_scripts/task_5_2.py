@@ -26,7 +26,7 @@ You can then take 8 bits of the binary mask using slices and convert them to dec
 Restriction: All tasks must be done using the topics covered in this and previous chapters.
 """
 
-network = input("Введите адрес сети: ")
+network = input("输入网络地址(x.x.x.x/x): ")
 
 ip, mask = network.split("/")
 ip_list = ip.split(".")
