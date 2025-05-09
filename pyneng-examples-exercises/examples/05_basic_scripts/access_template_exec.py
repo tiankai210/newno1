@@ -8,4 +8,6 @@ access_template = [
     "spanning-tree bpduguard enable",
 ]
 
+print("\n".join(access_template))
+print("\n")
 print("\n".join(access_template).format(5))
