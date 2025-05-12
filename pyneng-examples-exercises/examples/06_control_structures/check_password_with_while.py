@@ -7,7 +7,7 @@ password_correct = False
 
 while not password_correct:
     if len(password) < 8:
-        print("Пароль слишком короткий\n")
+        print("密码太短!\n")
         password = input("Re-enter password: ")
     elif username in password:
         print("Password contains username\n")
@@ -21,7 +21,7 @@ Example:
 $ python check_password_with_while.py
 Enter username: nata
 Enter password: nata
-Пароль слишком короткий
+密码太短!
 
 Re-enter password: natanata
 Password contains username
