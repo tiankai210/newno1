@@ -3,6 +3,8 @@ result = {}
 with open("sh_ip_int_br.txt") as f:
     for line in f:
         line = line.split()
+
+        # print(line[1][0])判断第2列的第一个字符是否为数字
         if line and line[1][0].isdigit():
             interface, address, *other = line
             result[interface] = address
